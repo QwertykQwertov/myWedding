@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content" id="screen" style="overflow: hidden;">
+        <div class="maketlang hide">
+            <iso> ru</iso>
+        </div>
+        <div class="hide">
+            <div class="weddingaddress">
+                Серпухов с1, посёлок дома отдыха Авангард</div>
+            <msg_opros_saved> ваш ответ сохранен и отправлен Жениху и Невесте</msg_opros_saved>
+        </div>
+        <div class="block mymenu" elemplace="bgmenu" id="menu" module="menu" style="background: rgba(224, 191, 173, 0.33);">
+            <div class="moveBox noMove">
+                <div class="textLine" action="menu">
+                    <div class="customLine" customname="menu">
+                        <div class="customElements hide" customname="menu">
+                            <button class="btn editGroup">
+                                Настройка шрифтов</button>
+                        </div>
+                        <div class="moveBox" style="left: 0%; top: 0%;">
+                            <div action="menutext" class="subTextLine mynav menuNav" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                <i class="fa fa-bars menuNavIcon"> </i>
+                                <div class="dropdownMenubox hide" elemplace="bgmenu" style="background: rgba(224, 191, 173, 0.33);">
+                                    <ul elemplace="bgmenu" style="background: rgba(224, 191, 173, 0.33);">
+                                        <li>
+                                            <a action="menutext" href="#mymain" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                                <i class="fa fa-star menuIcon"> </i>
+                                                <main> Главная</main>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a action="menutext" href="#myinv" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                                <i class="fa fa-align-center menuIcon"> </i>
+                                                <invitation> Приглашение</invitation>
+                                            </a>
+                                        </li>
+                                        <li hideorder="eAllSMSOrder eAllOrder" module="opros agree">
+                                            <a action="menutext" href="#agree" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                                <i class="fa fa-check-square-o menuIcon"> </i>
+                                                <opros> Опрос</opros>
+                                            </a>
+                                        </li>
+                                        <li hideorder="eAllOrder" module="timetable">
+                                            <a action="menutext" href="#timetable" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;"> <i class="fa fa-list-ul menuIcon"> </i>
+                                                <timetable> Расписание</timetable>
+                                            </a>
+                                        </li>
+                                        <li hideorder="eAllOrder" module="map">
+                                            <a action="menutext" href="#map" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;"> <i class="fa fa-map-o menuIcon"> </i>
+                                                <title_map> Карта</title_map>
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li hideorder="eAllSMSOrder eAllSMSPalitraOrder eAllOrder" module="comment agree">
+                                            <a action="menutext" href="#comment" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                                <i class="fa fa-comment menuIcon"> </i>
+                                                <add_comment> Написать сообщение</add_comment>
+                                            </a>
+                                        </li>
+                                        <li class="acceptLink" hideorder="eAllOrder" module="agree">
+                                            <a action="menutext" href="#textAgree" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;"> <i class="fa fa-plus-square menuIcon"> </i>
+                                                <btn_agree> Подтвердить</btn_agree>
+                                            </a>
+                                        </li>
+                                        <li class="cancelLink hide" hideorder="eAllOrder" module="agree">
+                                            <a action="menutext" href="#agree" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;"> <i class="fa fa-minus-square menuIcon"> </i>
+                                                <btn_cancel> Отменить подтверждение</btn_cancel>
+                                            </a>
+                                        </li>
+                                        <li module="ad2cal menu">
+                                            <a action="menutext" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;"> <i class="fa fa-calendar-plus-o menuIcon"> </i>
+                                                <add_to_calendar> Добавить в календарь</add_to_calendar>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moveBox" style="left: 0%; top: 0%;">
+                            <a action="menutext" class="subTextLine mynav hidden-xs" href="#myinv" style="color: rgb(41, 30, 37); font-size: 13.7032pt; font-family: CormorantInfant-Light; letter-spacing: 0em;">
+                                <invitation> Приглашение</invitation>
+                            </a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="adtcBox" id="ad2cal" module="ad2cal">
+                <div class="moveBox noMove">
+                    <div class="textLine" action="agreebtn">
+                        <div class="customLine" customname="agreebtn">
+                            <div class="customElements hide" customname="agreebtn">
+                                <button class="btn editGroup"> Настройка шрифта</button>
+                            </div> <span class="adtc addtocalendar"> 
+                                    <a action="menubtn" class="atcb-link BGPlace NoPadding" style="background: rgb(224, 191, 173); border-radius: 200px; font-size: 11.9903pt; font-family: Lobster; color: rgb(128, 128, 128);" href="https://weddingpost.ru/template/invent/userinvent.php?Action=getCal&amp;guest=undefined&amp;user_id=678352"> 
+                                      <div class="moveBox noMove"> <div action="agreebtn_text" class="subTextLine manual" style="color: rgb(41, 30, 37); font-family: CormorantInfant-Light; font-size: 11.9903pt;"> <add_to_calendar> Добавить в календарь</add_to_calendar> </div> </div> <div class="clearfix"> </div> </a> <div class="clearfix">
+                         </div> </span> </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="background" elemplace="bgcolor" style="background: rgb(255, 255, 255);">
+            <div class="window block" elemplace="bgcolor" id="mymain" module="mymain" style="background: rgb(255, 255, 255);">
+                <div class="addsBoxInside" style="top: 367px; left: 0px;">
+                    <div class="addBoxBtn"> +</div>
+                </div>
+                <div class="element6" elemplace="bgpattern" style="background-image:url('/cabinet/constructor/pattern/all/11.png');background-size: 0px;">
+                    <div class="plate_box plate-design">
+                        <div action="plate" class="element1" elemplace="plate" style="background-image:url('/cabinet/constructor/plate/731/upl4928.png');transform:scale(1.05) rotate(0deg); -webkit-transform: scale(1.05) rotate(0deg); -moz-transform: scale(1.05) rotate(0deg); -o-transform: scale(1.05) rotate(0deg); -ms-transform: scale(1.05) rotate(0deg);left:0%;top:18.5%;"
+                        optstyle="../plate/731/upl4928.png">
+                        </div>
+                    </div>
+                    <div class="element_txt">
+                        <div class="texts textBox" textplace="front_text">
+                            <div class="moveBox" style="left: 32.3853%; top: -22%;" delete="deleted" type=""> </div>
+                            <div class="moveBox" style="left: 32.0582%; top: 14%;" delete="deleted" type=""> </div>
+                            <div class="moveBox" style="left: 55.9069%; top: -68%;" delete="deleted" type="">
+                            </div>
+                            <div class="moveBox" style="left: 33.0507%; top: -27%;" delete="deleted" type=""> </div>
+                            <div class="moveBox" style="left: 46.8445%; top: -49%;" delete="deleted" type=""> </div>
+                            <div style="top: -20%; left: 17.7393%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -31%; left: 45.0467%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -47%; left: 30.2806%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -39%; left: 30.2807%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -69%; left: 56.1016%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -70%; left: 56.1016%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -67%; left: 32.8794%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -96%; left: 31.9613%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div class="moveBox" style="left: 42.2844%; top: -127%;" delete="deleted" type=""> </div>
+                            <div style="top: -119%; left: 55.2806%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -117%; left: 56.2806%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div class="moveBox" style="left: 19.6869%; top: -186.75%; z-index: -1;" delete="deleted" type=""> </div>
+                            <div class="moveBox" style="left: 61.4012%; top: -138%;" delete="deleted" type=""> </div>
+                            <div class="moveBox" style="left: 40.6189%; top: -119%;" delete="deleted" type=""> </div>
+                            <div style="top: -130%; left: 40.2372%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -251%; left: 36.3192%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -153%; left: 36.6107%;" type="" class="moveBox" delete="deleted"> </div>
+                            <div style="top: -157.75%; left: 28.2736%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 6.85161pt; line-height: inherit; letter-spacing: 0.2em; text-align: center; font-family: CormorantInfant-Light; color: rgb(0, 0, 0) !important; margin-left: -30px; margin-right: -30px;"
+                                class="textLine" action="text19"> ПРИГЛАШАЕМ РАЗДЕЛИТЬ ЭТОТ ДЕНЬ С НАМИ
+                                    <br>
+                                </div>
+                            </div>
+                            <div style="top: -175%; left: 38.4591%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 13.7032pt; line-height: inherit; letter-spacing: 0.1em; text-align: center; font-family: CormorantInfant-Light; margin-left: -20px; margin-right: -20px; color: rgb(0, 0, 0) !important;"
+                                class="textLine" action="text20"> 10 августа 2024
+                                    <br> </div>
+                            </div>
+                            <div class="moveBox" style="left: 31.2762%; top: -296.25%;">
+                                <div class="textLine" action="text21" style="font-size: 72.7984pt; font-family: SaintAmour; color: rgb(204, 156, 132); line-height: inherit; letter-spacing: 0em; text-align: center; margin-left: 10px; margin-right: 10px;">
+                                Екатерина</div>
+                            </div>
+                            <div class="moveBox" style="left: 36.3358%; top: -287%;">
+                                <div class="textLine" action="text22" style="font-size: 72.7984pt; font-family: SaintAmour; color: rgb(204, 156, 132); line-height: inherit; letter-spacing: 0em; text-align: center; margin-left: 10px; margin-right: 10px;">
+                                Иван
+                                    <br> </div>
+                            </div>
+                            <div style="top: -291%; left: 50.1459%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 10.2774pt; line-height: inherit; letter-spacing: 0.1em; text-align: center; font-family: CormorantInfant-Light; margin-left: -10px; margin-right: -10px; color: rgb(0, 0, 0) !important;"
+                                class="textLine" action="text23"> AND</div>
+                            </div>
+                            <div style="top: -300.75%; left: 57.4933%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 5.99516pt; line-height: inherit; letter-spacing: -0.1em; text-align: center; font-family: Colus; margin-left: -10px; margin-right: -10px; color: rgb(204, 156, 132);" class="textLine"
+                                action="text24"> _______</div>
+                            </div>
+                            <div style="top: -310.75%; left: 44.4933%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 5.99516pt; line-height: inherit; letter-spacing: -0.1em; text-align: center; font-family: Colus; margin-left: -10px; margin-right: -10px; color: rgb(204, 156, 132);" class="textLine"
+                                action="text25"> _______</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <div class="moveBox" id="count" module="count" style="top: 81%; left: 0%;">
+                        <div class="textLine" style="transform: scale(0.9);" action="countdown">
+                            <div class="customLine" customname="countdown">
+                                <div class="customElements hide" customname="countdown">
+                                    <button class="btn showUserdata"> Изменить дату</button>
+                                    <button class="btn editGroup"> Настройка шрифтов</button>
+                                </div>
+                                <div class="BGPlace" style="border-radius: 40px; background: rgba(255, 255, 255, 0);">
+                                    <div class="element_countdown">
+                                        <div class="yet weddatecontent hide">
+                                            <wed_yet> Мы женаты уже</wed_yet> <span> <b> <strong> </strong> <day> дней</day> </b> </span> </div>
+                                        <div class="now weddatecontent hide">
+                                            <div class="we_icons">
+                                                <div class="icon_groom"> </div>
+                                                <div class="icon_bride"> </div>
+                                            </div>
+                                            <br>
+                                            <wed_now> У нас сегодня свадьба!</wed_now>
+                                        </div>
+                                        <div class="count weddatecontent hide"> <span> <b> %w</b> <br> <week> недель</week> </span> <span> 
+                            <b> %d</b> <br> <day> дней</day> </span> <span> <b> %H</b> <br> <hour> часов</hour> </span> <span> <b> %M</b> <br> <minute> минут</minute> </span> <span> <b> %S</b> <br> <second> секунд</second> </span> </div>
+                                        <div class="moveBox"
+                                        style="left: 0%; top: 0%;">
+                                            <div action="countdowntext" class="subTextLine manual countdown" style="font-size: 11.1339pt; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); letter-spacing: 0em;"> <span> <b> 15</b> <br> <week> недель</week> </span> <span> <b> 00</b> <br> <day> дней</day> </span> <span> <b> 02</b> <br> <hour> часов</hour> </span> <span> <b> 32</b> <br> <minute> минут</minute> </span> <span> <b> 33</b> <br> <second> секунд</second> </span>                                                </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="block" elemplace="bgback" id="myinv" module="myinv" style="background: rgb(255, 255, 255);">
+                <div class="addsBoxInside" style="top: 1228px; left: 0px;">
+                    <div class="addBoxBtn"> +</div>
+                </div>
+                <div class="element7" elemplace="bgbackpattern" style="background-image:url('/cabinet/constructor/pattern/731/upl4930.png');background-size: 428px;">
+                    <div class="element8" elemplace="bgbacktext" style="background: rgba(255, 255, 255, 0.7);">
+                        <div class="element5 textBox" textplace="back_text">
+                            <div class="moveBox" style="left: 0%; top: -13%;">
+                                <div class="textLine" action="text1" style="font-size: 34.2581pt; font-family: WonderGardene; color: rgb(41, 30, 37); text-align: center; line-height: 1em;">
+                                    <dear_guest> Дорогой
+                                        <br> Гость!
+                                        <dear_guest> </dear_guest>
+                                    </dear_guest>
+                                </div>
+                            </div>
+                            <div class="moveBox" style="left: 0%; top: -11%;">
+                                <div class="textLine" action="text2" style="font-size: 10.2774pt; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); text-align: center; margin-left: -10px; margin-right: -10px;"> Мы рады сообщить Вам, что 10.08.2024 состоится самое главное торжество в нашей жизни - день нашей свадьбы!
+                                    <br> Приглашаем Вас разделить с нами радость этого незабываемого дня. </div>
+                            </div>
+                            <div style="top:0%; left:0%;" type="text" class="moveBox">
+                                <div spellcheck="false" style="font-size: 25.6935pt; line-height: 2em; letter-spacing: 0em; text-align: center; font-family: WonderGardene; color: rgb(41, 30, 37);" class="textLine" action="text5"> Ждем Вас!
+                                    <br> </div>
+                            </div>
+                            <div class="moveBox" style="left: 2%; top: -6%;">
+                                <div class="textLine" action="text3" style="font-size: 10.2774pt; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); text-align: center;"> 10.08.2024 в 10:00
+                                    <brvarname=place>
+                                        <br> &nbsp;
+                                        <br>
+                                        <br> </brvarname=place>
+                                </div>
+                            </div>
+                            <div style="top:0%" type="img" class="moveBox">
+                                <div style="float:left; margin-left: 50px; margin-right: 50px; " class="textLine" action="text6"> <img class="BGPlace" width="100%" style="border-radius: 200px; background: rgba(255, 255, 255, 0.8); padding: 2%;" src="https://wdpst.store/images/678352/2e501a.jpg"> </div>
+                            </div>
+                            <div class="moveBox" style="left: 0%; top: 1%;">
+                                <div class="textLine" action="text4" style="font-size: 25.6935pt; font-family: WonderGardene; color: rgb(41, 30, 37); text-align: center; line-height: 1em;"> Ваши&nbsp;
+                                    <br> Иван и Екатерина </div>
+                            </div>
+                            <div style="top:0%; left:0%;" type="" class="moveBox" delete="deleted"> </div>
+                        </div>
+                        <div hideorder="eAllSMSOrder eAllOrder" id="palitra" module="palitra">
+                            <div class="moveBox noMove" style="top: 22%; left: 2%;">
+                                <div class="textLine" style="transform: scale(0.9);" action="palitra">
+                                    <div class="customLine bigPalitra" customname="palitra">
+                                        <div class="customElements hide" customname="palitra">
+                                            <button class="btn addcolor"> Настроить свою палитру</button>
+                                            <button class="btn editGroup"> Настройка шрифтов</button>
+                                        </div>
+                                        <div class="BGPlace" style="padding: 3%; border-radius: 40px; background: rgba(255, 255, 255, 0);">
+                                            <div class="moveBox">
+                                                <div action="palitra_text" class="subTextLine manual" style="font-size: 10.2774pt; padding: 5% 5% 0%; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); line-height: 1.25em;">
+                                                    <palitra_text> Будем благодарны, если при выборе нарядов на наше торжество вы придержитесь следующей палитры</palitra_text>
+                                                </div>
+                                            </div>
+                                            <div class="colors">
+                                                <div class="color hidden"> </div>
+                                                <div class="color" bg="rgba(249, 249, 249, 0.3)" style="background: rgba(24, 26, 41, 0.21);"> </div>
+                                                <div class="color" bg="rgba(249, 249, 249, 0.3)" style="background: rgba(24, 26, 41, 0.21);"> </div>
+                                                <div class="color" bg="rgba(249, 249, 249, 0.3)" style="background: rgba(24, 26, 41, 0.21);"> </div>
+                                                <div class="color" bg="rgba(249, 249, 249, 0.3)" style="background: rgba(24, 26, 41, 0.21);"> </div>
+                                                <div class="color" bg="rgba(249, 249, 249, 0.3)" style="background: rgba(24, 26, 41, 0.21);"> </div>
+                                            </div>
+                                            <div class="clearfix"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <br>
+                        <div hideorder="eAllOrder" id="agree" module="agree" style="height:initial">
+                            <div class="moveBox">
+                                <div class="textLine" action="agree">
+                                    <div class="customLine" customname="agree">
+                                        <div class="customElements hide" customname="agree">
+                                            <button class="btn editGroup"> Настройка шрифтов</button>
+                                        </div>
+                                        <div action="agreebtn" answer="1" class="BGPlace btn btn-success guestAgreement guestAgree" data-opros="1" elemplace="bgbuttonagree" href="#textAgree" style="background: rgb(224, 191, 173); border-radius: 60px; font-size: 13.7032pt; font-family: Lobster; color: rgb(128, 128, 128); letter-spacing: 0em;">
+                                            <div class="moveBox">
+                                                <div action="agree_text" class="subTextLine manual" style="font-size: 14.5597pt; font-family: CormorantInfant-Light; color: rgb(255, 255, 255);"> <i class="fa fa-check"> </i>
+                                                    <btn_agree> Подтвердить</btn_agree>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div hideorder="eAllSMSOrder eAllSMSPalitraOrder eAllOrder" id="comment" module="comment">
+                                <div class="moveBox noMove">
+                                    <div class="textLine" action="comment">
+                                        <div class="customLine" customname="comment">
+                                            <div class="customElements hide" customname="comment">
+                                                <button class="btn editGroup"> Настройка шрифтов</button>
+                                                <button class="btn showUserdata"> Указать кошелек</button>
+                                            </div>
+                                            <a class="addComment" elemplace="comment">
+                                                <div class="moveBox">
+                                                    <div action="agree_text" class="subTextLine manual" style="font-size: 12pt; font-family: Zing; color: #808080;"> <i class="fa-comment fa"> </i>
+                                                        <comment> Добавить сообщение для жениха и невесты</comment>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentYes hide">
+                                    <div class="col-xs-2 col-sm-1"> <i class="fa fa-quote-left"> </i> </div>
+                                    <div class="col-xs-10 col-sm-11">
+                                        <div class="commentFromGuest"> <span> </span>
+                                            <div class="andGift hide"> <i class="fa fa-gift"> </i>
+                                                <div> </div>
+                                            </div> <b class="author"> </b> </div>
+                                    </div>
+                                    <a class="editComment"> <i class="fa fa-edit"> </i> </a>
+                                    <div class="row">
+                                        <div class="time"> Добавлено только что</div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="commentBox" style="display: none;">
+                                    <div class="hide">
+                                        <text_send_placeholder> Напишите комментарий или поздравление для Жениха и Невесты</text_send_placeholder>
+                                    </div>
+                                    <textarea placeholder=""> </textarea>
+                                    <div id="money" module="money">
+                                        <label class="withMoney">
+                                            <input name="withMoney" type="checkbox"> <span> <gift_money> денежный подарок</gift_money> </span> </label>
+                                        <div class="moneyBox hide">
+                                            <div class="selectedMoney dropdown-toggle" data-toggle="dropdown">
+                                                <a> <i class="fa fa-gift"> </i> <span> 5 000 руб</span> </a>
+                                            </div>
+                                            <ul class="dropdown-menu pull-left moneyList"> <a class="oneMoney" val="1000"> 1 000 руб</a> <a class="oneMoney" val="2000"> 2 000 руб</a> <a class="oneMoney" val="3000"> 3 000 руб</a> <a class="oneMoney" val="4000"> 4 000 руб</a> <a class="oneMoney active"
+                                                val="5000"> 5 000 руб</a> <a class="oneMoney" val="7000"> 7 000 руб</a> <a class="oneMoney" val="10000"> 10 000 руб</a> <a class="oneMoney" val="15000"> 15 000 руб</a> <a class="oneMoney" val="20000"> 20 000 руб</a>                                                <a class="oneMoney" val="50000"> 50 000 руб</a> <a class="oneMoney" val="80000"> 80 000 руб</a> <a class="oneMoney" val="100000"> 100 000 руб</a> </ul>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <a class="btn sendComment" targer="_blank"> <i class="fa-send fa"> </i>
+                                        <btn_send> Отправить</btn_send>
+                                    </a>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="alert-success guestAgreement iAgree hide" id="textAgree">
+                                <div class="col-xs-4" style="margin: 20px auto"> <i class="ic ic-l ic-hands-up"> </i> </div>
+                                <div class="col-xs-8">
+                                    <text_agree> Спасибо, что подтвердили свое присутствие!
+                                        <br> <b var="he"> Иван</b> и <b var="she"> Екатерина</b> уже оповещены об этом ;)</text_agree>
+                                </div>
+                                <div answer="0" class="btn btn-default guestAgree">
+                                    <btn_cancel> Отменить подтверждение</btn_cancel>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="module block" elemplace="bgopros" hideorder="eAllSMSOrder eAllOrder" id="opros" module="opros agree" style="background: rgb(224, 191, 173); display: none; border: 0px solid rgb(255, 255, 255);">
+                        <div class="corner_content">
+                            <div class="corner" style="border-bottom-color: rgb(224, 191, 173);"> </div>
+                        </div>
+                        <div class="alert-warning text-center">
+                            <text_opros> Пожалуйста, ответьте на вопросы, которые для вас подготовили <b var="he"> Иван</b> и <b var="she"> Екатерина</b> :</text_opros>
+                        </div>
+                        <div class="addsBoxInside" style="margin-left: -20px; top: 1228px; left: 0px;">
+                            <div class="addBoxBtn"> +</div>
+                            <div class="addsBoxCustom hide">
+                                <div class="btn btn-style-one btn-style-gold btn-style-gold-fill addOpros"> Добавить новый вопрос</div>
+                            </div>
+                        </div>
+                        <div class="header_opros hide">
+                            <div class="col-xs-12 goSummary"> <a class="btn btn-default"> Общий итог</a> </div>
+                            <div class="col-xs-6 goLeft">
+                                <a class="btn btn-default"> <i class="fa fa-angle-left"> </i> <b var="prev_guest"> Предыдущий</b> </a>
+                            </div>
+                            <div class="col-xs-6 goRight">
+                                <a class="btn btn-default"> <b var="next_guest"> Следующий</b> <i class="fa fa-angle-right"> </i> </a>
+                            </div>
+                            <div class="col-xs-12 name">
+                                <div class="h2"> <b var="guest"> Общий результат</b> </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <br>
+                        <div class="moveBox" style="top:18%">
+                            <div class="textLine" style="transform: scale(0.9);" action="opros">
+                                <div action="oprostext" class="customLine" customname="opros" id="weddingOpros">
+                                    <div class="customElements hide" customname="opros">
+                                        <button class="btn addOpros"> Добавить вопрос</button>
+                                        <button class="btn editGroup"> Настройка шрифтов</button>
+                                    </div>
+                                    <div class="opros repeatLine hide">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delOpros"> </i> <i class="fa fa-edit coloricon text-center editOpros addOpros"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="questiontxt" class="subTextLine manual" name="question" style="font-size: 12.8468pt; font-family: 'Calme Bold'; color: rgb(255, 255, 255); letter-spacing: 0em;"> </div>
+                                            </div>
+                                            <div class="moveBox">
+                                                <div class="subTextLine manual" name="type"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="varianttxt" class="subTextLine manual form-check" name="variants" style="font-size: 11.1339pt; font-family: NeueRoman; color: rgb(255, 255, 255); letter-spacing: 0em;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="opros repeatLine" data-opros="1">
+                                        <div class="repeatControl">
+                                            <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delOpros"> </i>
+                                            <i class="fa fa-edit coloricon text-center editOpros addOpros"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i> </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="questiontxt" class="subTextLine manual" name="question" style="font-size: 12.8468pt; font-family: 'Calme Bold'; color: rgb(255, 255, 255); letter-spacing: 0em;">
+                                                    Потребуется ли вам трансфер?</div>
+                                            </div>
+                                            <div class="moveBox">
+                                                <div class="subTextLine manual" name="type"> Несколько ответов</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="varianttxt" class="subTextLine manual form-check" name="variants" style="font-size: 11.1339pt; font-family: NeueRoman; color: rgb(255, 255, 255); letter-spacing: 0em;" raw_variants="*Нет 
+  *Только до торжества
+  *Только после торжества
+  *До и после торжества">
+                                                    <input class="form-check-input" type="checkbox" value="" id="1_1">
+                                                    <label class="form-check-label" for="1_1"> <i class="fa fa-circle-o"> </i> Нет
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="1_2">
+                                                    <label class="form-check-label" for="1_2"> <i class="fa fa-circle-o"> </i> Только до торжества
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="1_3">
+                                                    <label class="form-check-label" for="1_3"> <i class="fa fa-circle-o"> </i> Только после торжества
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="1_4">
+                                                    <label class="form-check-label" for="1_4"> <i class="fa fa-circle-o"> </i> До и после торжества</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="opros repeatLine" data-opros="2">
+                                        <div class="repeatControl">
+                                            <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delOpros"> </i> <i class="fa fa-edit coloricon text-center editOpros addOpros"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="questiontxt" class="subTextLine manual" name="question" style="font-size: 12.8468pt; font-family: 'Calme Bold'; color: rgb(255, 255, 255); letter-spacing: 0em;"> Есть ли у вас особые предпочтения по еде</div>
+                                            </div>
+                                            <div class="moveBox">
+                                                <div class="subTextLine manual" name="type"> Несколько ответов</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="varianttxt" class="subTextLine manual form-check" name="variants" style="font-size: 11.1339pt; font-family: NeueRoman; color: rgb(255, 255, 255); letter-spacing: 0em;" raw_variants="*нет
+  *не ем мясо
+  *не ем рыбу
+  *вегетарианец">
+                                                    <input class="form-check-input" type="checkbox" value="" id="2_1">
+                                                    <label class="form-check-label" for="2_1"> <i class="fa fa-circle-o"> </i> нет
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="2_2">
+                                                    <label class="form-check-label" for="2_2"> <i class="fa fa-circle-o"> </i> не ем мясо
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="2_3">
+                                                    <label class="form-check-label" for="2_3"> <i class="fa fa-circle-o"> </i> не ем рыбу
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="2_4">
+                                                    <label class="form-check-label" for="2_4"> <i class="fa fa-circle-o"> </i> вегетарианец</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="opros repeatLine" data-opros="3">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delOpros"> </i> <i class="fa fa-edit coloricon text-center editOpros addOpros"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="questiontxt" class="subTextLine manual" name="question" style="font-size: 12.8468pt; font-family: 'Calme Bold'; color: rgb(255, 255, 255); letter-spacing: 0em;"> Какой алкоголь вы предпочитаете?</div>
+                                            </div>
+                                            <div class="moveBox">
+                                                <div class="subTextLine manual" name="type"> Несколько ответов</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="varianttxt" class="subTextLine manual form-check" name="variants" style="font-size: 11.1339pt; font-family: NeueRoman; color: rgb(255, 255, 255); letter-spacing: 0em;" raw_variants="*Красное вино
+  *Белое вино
+  *Шампанское
+  *Виски/коньяк
+  *Водка
+  *Не буду пить алкоголь">
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_1">
+                                                    <label class="form-check-label" for="3_1"> <i class="fa fa-circle-o"> </i> Красное вино
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_2">
+                                                    <label class="form-check-label" for="3_2"> <i class="fa fa-circle-o"> </i> Белое вино
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_3">
+                                                    <label class="form-check-label" for="3_3"> <i class="fa fa-circle-o"> </i> Шампанское
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_4">
+                                                    <label class="form-check-label" for="3_4"> <i class="fa fa-circle-o"> </i> Виски/коньяк
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_5">
+                                                    <label class="form-check-label" for="3_5"> <i class="fa fa-circle-o"> </i> Водка
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="3_6">
+                                                    <label class="form-check-label" for="3_6"> <i class="fa fa-circle-o"> </i> Не буду пить алкоголь</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="opros repeatLine" data-opros="4">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delOpros"> </i> <i class="fa fa-edit coloricon text-center editOpros addOpros"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="questiontxt" class="subTextLine manual" name="question" style="font-size: 12.8468pt; font-family: 'Calme Bold'; color: rgb(255, 255, 255); letter-spacing: 0em;"> Будет ли с вами на празднике ребенок?</div>
+                                            </div>
+                                            <div class="moveBox">
+                                                <div class="subTextLine manual" name="type"> Несколько ответов</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="varianttxt" class="subTextLine manual form-check" name="variants" style="font-size: 11.1339pt; font-family: NeueRoman; color: rgb(255, 255, 255); letter-spacing: 0em;" raw_variants="*Да
+  *Нет">
+                                                    <input class="form-check-input" type="checkbox" value="" id="4_1">
+                                                    <label class="form-check-label" for="4_1"> <i class="fa fa-circle-o"> </i> Да
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="4_2">
+                                                    <label class="form-check-label" for="4_2"> <i class="fa fa-circle-o"> </i> Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module block" elemplace="bgtimetable" hideorder="eAllOrder" id="timetable" module="timetable" style="background: rgb(255, 255, 255); border: 0px solid rgb(255, 255, 255);">
+                <div class="addsBoxInside">
+                    <div class="addBoxBtn"> +</div>
+                    <div class="addsBoxCustom hide">
+                        <div class="btn btn-style-one btn-style-gold btn-style-gold-fill addEvent"> Добавить новое мероприятие</div>
+                    </div>
+                </div>
+                <div elemplace="bgtimetablepattern" style="background-image:url('/cabinet/constructor/pattern/731/upl4933.png'); background-position: 50% 50%; background-size: cover;">
+                    <div class="element_tt textBox" textplace="timetable_texts">
+                        <div class="moveBox" style="top: 0%; left: 0%;">
+                            <div action="textNaN" class="textLine" style="font-family: WonderGardene; color: rgb(41, 30, 37); font-size: 47.1048pt; line-height: 1em; text-align: center; letter-spacing: 0em;">
+                                <wedding_timetable> Свадебное расписание</wedding_timetable>
+                            </div>
+                        </div>
+                        <div class="moveBox" style="top:18%">
+                            <div class="textLine" style="transform: scale(0.9);" action="timetable">
+                                <div action="timetabletext" class="customLine" customname="timetable" id="timetablecontent" style="font-family: Lobster; color: rgb(252, 225, 148); letter-spacing: 0em;">
+                                    <div class="customElements hide" customname="timetable">
+                                        <button class="btn addEvent"> Добавить мероприятие</button>
+                                        <button class="btn editGroup"> Настройка шрифтов</button>
+                                    </div>
+                                    <div class="btn addBtn addEvent hide"> Добавить мероприятие</div>
+                                    <div class="event repeatLine hide" style="position: relative;">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delEvent"> </i> <i class="fa fa-edit coloricon text-center editEvent addEvent"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-xs-3" style="position: absolute;">
+                                            <div class="moveBox">
+                                                <div action="timetabletext_date" class="subTextLine manual" style="color: rgb(41, 30, 37); font-family: CormorantInfant-Light; font-size: 21.4113pt; line-height: 1.5em; text-align: left;">
+                                                    <div name="time"> 12:00</div>
+                                                    <div name="date"> </div>
+                                                    <div class="clearfix"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-offset-3s col-xs-offset-4">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_subtitle" class="subTextLine manual" name="title" style="font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 17.9855pt; text-align: left; letter-spacing: 0em;">
+                                                Торжественная регистрация брака</div>
+                                            </div>
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_address" class="subTextLine manual" name="address" style="line-height: 1em; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 12pt; text-align: left; letter-spacing: 0em;">
+                                                Английская набережная, 28</div>
+                                            </div>
+                                        </div>
+                                        <div class="moveBox">
+                                            <div action="timetabletext_desc" class="subTextLine col-xs-9 col-xs-offset-3" style="font-family: Annabelle; color: rgb(128, 128, 128); font-size: 11pt; text-align: left;">
+                                                <div name="desc"> Наша регистрация пройдет в залах ЗАГСа Адмиралтейского района, приглашаем всех разделить с нами такой торжественный момент</div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="event repeatLine" style="position: relative;" data-event="1">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delEvent"> </i> <i class="fa fa-edit coloricon text-center editEvent addEvent"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-xs-3" style="position: absolute;">
+                                            <div class="moveBox">
+                                                <div action="timetabletext_date" class="subTextLine manual" style="color: rgb(41, 30, 37); font-family: CormorantInfant-Light; font-size: 21.4113pt; line-height: 1.5em; text-align: left;">
+                                                    <div name="time"> 12:30</div>
+                                                    <div name="date"> 10.08.2024</div>
+                                                    <div class="clearfix"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-offset-3s col-xs-offset-4">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_subtitle" class="subTextLine manual" name="title" style="font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 17.9855pt; text-align: left; letter-spacing: 0em;">
+                                                Торжественная роспись</div>
+                                            </div>
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_address" class="subTextLine manual" name="address" style="line-height: 1em; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 12pt; text-align: left; letter-spacing: 0em;">
+                                                ЗАГС г. Пущино</div>
+                                            </div>
+                                        </div>
+                                        <div class="moveBox">
+                                            <div action="timetabletext_desc" class="subTextLine col-xs-9 col-xs-offset-3" style="font-family: Annabelle; color: rgb(128, 128, 128); font-size: 11pt; text-align: left;">
+                                                <div name="desc"> Приглашаем вас разделить вместе с нами радость создания новой семьи.</div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="event repeatLine" style="position: relative;" data-event="2">
+                                        <div class="repeatControl"> <i class="fa fa-long-arrow-up coloricon text-center upHTML"> </i> <i class="fa fa-close coloricon text-center delEvent"> </i> <i class="fa fa-edit coloricon text-center editEvent addEvent"> </i> <i class="fa fa-long-arrow-down coloricon text-center downHTML"> </i>                                            </div>
+                                        <div class="col-xs-3" style="position: absolute;">
+                                            <div class="moveBox">
+                                                <div action="timetabletext_date" class="subTextLine manual" style="color: rgb(41, 30, 37); font-family: CormorantInfant-Light; font-size: 21.4113pt; line-height: 1.5em; text-align: left;">
+                                                    <div name="time"> 17:00</div>
+                                                    <div name="date"> 10.08.2024</div>
+                                                    <div class="clearfix"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-offset-3s col-xs-offset-4">
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_subtitle" class="subTextLine manual" name="title" style="font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 17.9855pt; text-align: left; letter-spacing: 0em;">
+                                                Банкет</div>
+                                            </div>
+                                            <div class="moveBox" style="left: 0%; top: 0%;">
+                                                <div action="timetabletext_address" class="subTextLine manual" name="address" style="line-height: 1em; font-family: CormorantInfant-Light; color: rgb(41, 30, 37); font-size: 12pt; text-align: left; letter-spacing: 0em;">
+                                                Банкетный зал</div>
+                                            </div>
+                                        </div>
+                                        <div class="moveBox">
+                                            <div action="timetabletext_desc" class="subTextLine col-xs-9 col-xs-offset-3" style="font-family: Annabelle; color: rgb(128, 128, 128); font-size: 11pt; text-align: left;">
+                                                <div name="desc"> Предусматривается фуршет, который будет ждать Вас с 16:00</div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="moveBox noMove fullBox">
+                <div class="textLine noBorder">
+                    <div class="customLine" customname="map">
+                        <div class="customElements hide" customname="map"> <span class="descText"> Карта показывает точку сбора гостей, координаты, которой вы указали в конструкторе <b class="weddingcoord"> 54.961519 37.457422</b> <br> </span>
+                            <button class="btn showUserdata"> Настроить координат</button>
+                        </div>
+                        <div class="module block" hideorder="eAllOrder" id="map" module="map" style="border: 0px solid rgb(255, 255, 255);">
+                            <ymaps class="ymaps-2-1-79-map" style="width: 1903px; height: 500px;">
+                                <ymaps class="ymaps-2-1-79-map ymaps-2-1-79-i-ua_js_yes ymaps-2-1-79-map-bg ymaps-2-1-79-islets_map-lang-ru" style="width: 1903px; height: 500px;">
+                                    <ymaps class="ymaps-2-1-79-inner-panes">
+                                        <ymaps class="ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none" unselectable="on" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url('https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur') 16 16, url('https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur'), move;">
+                                        </ymaps>
+                                        <ymaps class="ymaps-2-1-79-ground-pane" style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 501;">
+                                            <ymaps style="z-index: 150; position: absolute;">
+                                                <canvas height="756" width="2159" style="position: absolute; width: 2159px; height: 756px; left: -128px; top: -128px;"> </canvas>
+                                            </ymaps>
+                                        </ymaps>
+                                        <ymaps class="ymaps-2-1-79-copyrights-pane" style="height: 0px; inset: auto 0px 0px; position: absolute; z-index: 5002;">
+                                            <ymaps>
+                                                <ymaps class="ymaps-2-1-79-copyright ymaps-2-1-79-copyright_logo_no">
+                                                    <ymaps class="ymaps-2-1-79-copyright__fog"> …</ymaps>
+                                                    <ymaps class="ymaps-2-1-79-copyright__wrap">
+                                                        <ymaps class="ymaps-2-1-79-copyright__layout">
+                                                            <ymaps class="ymaps-2-1-79-copyright__content-cell">
+                                                                <ymaps class="ymaps-2-1-79-copyright__content">
+                                                                    <ymaps class="ymaps-2-1-79-copyright__text"> © Яндекс</ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-copyright__agreement"> &nbsp;<a class="ymaps-2-1-79-copyright__link" target="_blank" href="https://yandex.ru/legal/maps_termsofuse/?lang=ru" rel="noopener"> Условия использования</a> </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                            <ymaps class="ymaps-2-1-79-copyright__logo-cell">
+                                                                <a class="ymaps-2-1-79-copyright__logo" href="" target="_blank"> </a>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                            </ymaps>
+                                            <ymaps class="ymaps-2-1-79-map-copyrights-promo">
+                                                <ymaps>
+                                                    <ymaps class="ymaps-2-1-79-gotoymaps" title="Как добраться">
+                                                        <ymaps class="ymaps-2-1-79-gotoymaps__container">
+                                                            <ymaps class="ymaps-2-1-79-gotoymaps__pin"> </ymaps>
+                                                            <ymaps class="ymaps-2-1-79-gotoymaps__text-container">
+                                                                <ymaps class="ymaps-2-1-79-gotoymaps__text"> Как добраться</ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                    <ymaps class="ymaps-2-1-79-gototaxi" title="Доехать на такси">
+                                                        <ymaps class="ymaps-2-1-79-gototaxi__container">
+                                                            <ymaps class="ymaps-2-1-79-gototaxi__pin">
+                                                            </ymaps>
+                                                            <ymaps class="ymaps-2-1-79-gototaxi__text-container">
+                                                                <ymaps class="ymaps-2-1-79-gototaxi__text"> Доехать на такси</ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps> <a class="ymaps-2-1-79-gototech" target="_blank" href="https://tech.yandex.ru/maps/mapsapi/?from=api-maps "> 
+        Создать свою карту</a> </ymaps>
+                                            </ymaps>
+                                        </ymaps>
+                                        <ymaps class="ymaps-2-1-79-controls-pane" style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;">
+                                            <ymaps class="ymaps-2-1-79-controls__toolbar" style="margin-top: 10px;">
+                                                <ymaps class="ymaps-2-1-79-controls__toolbar_left">
+                                                    <ymaps class="ymaps-2-1-79-controls__control_toolbar ymaps-2-1-79-user-selection-none" unselectable="on" style="margin-right: 0px; margin-left: 10px; position: inherit;">
+                                                        <ymaps>
+                                                            <ymaps class="ymaps-2-1-79-float-button ymaps-2-1-79-_hidden-text" style="max-width: 90px" title="Определить ваше местоположение">
+                                                                <ymaps class="ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_geolocation"> </ymaps>
+                                                                <ymaps class="ymaps-2-1-79-float-button-text"> </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                    <ymaps class="ymaps-2-1-79-controls__control_toolbar" style="margin-right: 0px; margin-left: 10px; position: inherit;">
+                                                        <ymaps>
+                                                            <ymaps class="ymaps-2-1-79-searchbox">
+                                                                <ymaps id="id_171415599988141403797">
+                                                                    <ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-search ymaps-2-1-79-search_layout_normal ymaps-2-1-79-searchbox__normal-layout">
+                                                                            <ymaps id="id_171415599988141403798">
+                                                                                <ymaps>
+                                                                                    <ymaps class="ymaps-2-1-79-searchbox__input-cell">
+                                                                                        <ymaps class="ymaps-2-1-79-searchbox-input">
+                                                                                            <input class="ymaps-2-1-79-searchbox-input__input" placeholder="Адрес или объект" autocomplete="off">
+                                                                                            <ymaps class="ymaps-2-1-79-searchbox-input__clear-button"> </ymaps>
+                                                                                        </ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-searchbox-list-button"> </ymaps>
+                                                                                    </ymaps>
+                                                                                    <ymaps class="ymaps-2-1-79-searchbox__button-cell">
+                                                                                        <ymaps class="ymaps-2-1-79-searchbox-button ymaps-2-1-79-_pin_right ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                                                            <ymaps class="ymaps-2-1-79-searchbox-button-text"> Найти</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                            <ymaps id="id_171415599988141403799">
+                                                                                <ymaps>
+                                                                                    <ymaps class="ymaps-2-1-79-islets_serp-popup ymaps-2-1-79-islets__hidden">
+                                                                                        <ymaps class="ymaps-2-1-79-islets_serp-popup__tail"> </ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-islets_serp" style="max-height: 400px;">
+                                                                                            <ymaps id="id_171415599988141403800">
+                                                                                                <ymaps> </ymaps>
+                                                                                            </ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                        <ymaps style="z-index: 40000; display: block; position: absolute; width: 252px; top: 29px; left: 48px;"> </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                                <ymaps class="ymaps-2-1-79-controls__toolbar_right">
+                                                    <ymaps class="ymaps-2-1-79-controls__control_toolbar" style="margin-right: 10px; margin-left: 0px; position: inherit;">
+                                                        <ymaps>
+                                                            <ymaps class="ymaps-2-1-79-traffic">
+                                                                <ymaps id="id_171415599988141403805" unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                    <ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-float-button ymaps-2-1-79-float-button_traffic_left">
+                                                                            <ymaps class="ymaps-2-1-79-traffic__icon ymaps-2-1-79-traffic__icon_icon_off ymaps-2-1-79-float-button-icon"> </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-float-button-text">
+                                                                                <ymaps> Пробки</ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                    <ymaps> </ymaps>
+                                                                </ymaps>
+                                                                <ymaps id="id_171415599988141403806">
+                                                                    <ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-traffic__panel ymaps-2-1-79-popup ymaps-2-1-79-popup_direction_down ymaps-2-1-79-popup_to_bottom ymaps-2-1-79-popup_theme_ffffff ymaps-2-1-79-user-selection-none"
+                                                                        unselectable="on" style="width: 270px;">
+                                                                            <ymaps class="ymaps-2-1-79-traffic__tail ymaps-2-1-79-popup__tail"> </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-traffic__panel-content">
+                                                                                <ymaps id="id_171415599988141403807">
+                                                                                    <ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-traffic__switcher">
+                                                                                            <ymaps class="ymaps-2-1-79-traffic__switcher-item ymaps-2-1-79-traffic__switcher-item_data_actual ymaps-2-1-79-traffic__switcher-item_selected_yes"> Сейчас</ymaps>
+                                                                                            <ymaps class="ymaps-2-1-79-traffic__switcher-item ymaps-2-1-79-traffic__switcher-item_data_archive"> Статистика</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                                <ymaps> </ymaps>
+                                                                                <ymaps> </ymaps>
+                                                                                <ymaps> </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                    <ymaps class="ymaps-2-1-79-controls__control_toolbar" style="margin-right: 10px; margin-left: 0px; position: inherit;">
+                                                        <ymaps>
+                                                            <ymaps class="ymaps-2-1-79-listbox ymaps-2-1-79-listbox_opened_no ymaps-2-1-79-listbox_align_right" style="width: 87px;">
+                                                                <ymaps class="ymaps-2-1-79-listbox__button ymaps-2-1-79-_visible-arrow ymaps-2-1-79-user-selection-none" unselectable="on" title="">
+                                                                    <ymaps class="ymaps-2-1-79-listbox__button-icon ymaps-2-1-79-_icon_layers"> </ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-listbox__button-text"> Слои</ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-listbox__button-arrow"> </ymaps>
+                                                                </ymaps>
+                                                                <ymaps class="ymaps-2-1-79-listbox__panel ymaps-2-1-79-i-custom-scroll" style="transform: translate3d(0px, 0px, 0px) scale(1, 1);">
+                                                                    <ymaps class="ymaps-2-1-79-listbox__list" style="max-height: 999999px;">
+                                                                        <ymaps>
+                                                                            <ymaps>
+                                                                                <ymaps id="id_171415599988141403786">
+                                                                                    <ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                                        <ymaps class="ymaps-2-1-79-listbox__list-item ymaps-2-1-79-listbox__list-item_selected_yes">
+                                                                                            <ymaps class="ymaps-2-1-79-listbox__list-item-text"> Схема</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps>
+                                                                            <ymaps>
+                                                                                <ymaps id="id_171415599988141403787">
+                                                                                    <ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                                        <ymaps class="ymaps-2-1-79-listbox__list-item ymaps-2-1-79-listbox__list-item_selected_no">
+                                                                                            <ymaps class="ymaps-2-1-79-listbox__list-item-text"> Спутник</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps>
+                                                                            <ymaps>
+                                                                                <ymaps id="id_171415599988141403788">
+                                                                                    <ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                                        <ymaps class="ymaps-2-1-79-listbox__list-item ymaps-2-1-79-listbox__list-item_selected_no">
+                                                                                            <ymaps class="ymaps-2-1-79-listbox__list-item-text"> Гибрид</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps>
+                                                                            <ymaps>
+                                                                                <ymaps id="id_171415599988141403784">
+                                                                                    <ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-listbox__list-separator"> </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps>
+                                                                            <ymaps>
+                                                                                <ymaps id="id_171415599988141403785">
+                                                                                    <ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                                        <ymaps class="ymaps-2-1-79-listbox__list-item ymaps-2-1-79-listbox__list-item_selected_no">
+                                                                                            <ymaps class="ymaps-2-1-79-listbox__list-item-text"> Панорамы</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                    <ymaps class="ymaps-2-1-79-controls__control_toolbar ymaps-2-1-79-user-selection-none" unselectable="on" style="margin-right: 10px; margin-left: 0px; position: inherit;">
+                                                        <ymaps>
+                                                            <ymaps class="ymaps-2-1-79-float-button ymaps-2-1-79-_hidden-text" style="max-width: 28px" title="">
+                                                                <ymaps class="ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_expand"> </ymaps>
+                                                                <ymaps class="ymaps-2-1-79-float-button-text"> </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                            </ymaps>
+                                            <ymaps class="ymaps-2-1-79-controls__bottom" style="top: 500px;">
+                                                <ymaps class="ymaps-2-1-79-controls__control" style="margin-right: 0px; margin-left: 0px; position: inherit; inset: auto 10px 30px auto;">
+                                                    <ymaps>
+                                                        <ymaps style="display: block;">
+                                                            <ymaps style="display: inline-block; height: 100%; vertical-align: top;">
+                                                                <ymaps id="id_171415599988141403789">
+                                                                    <ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-scaleline" style="width: 73px;">
+                                                                            <ymaps class="ymaps-2-1-79-scaleline__left">
+                                                                                <ymaps class="ymaps-2-1-79-scaleline__left-border"> </ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-scaleline__left-line"> </ymaps>
+                                                                            </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-scaleline__center">
+                                                                                <ymaps class="ymaps-2-1-79-scaleline__label"> 100&nbsp;м</ymaps>
+                                                                            </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-scaleline__right">
+                                                                                <ymaps class="ymaps-2-1-79-scaleline__right-border"> </ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-scaleline__right-line"> </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                            <ymaps style="display: inline-block; width: 10px; height: 0"> </ymaps>
+                                                            <ymaps style="display: inline-block;">
+                                                                <ymaps id="id_171415599988141403790" unselectable="on" class="ymaps-2-1-79-user-selection-none">
+                                                                    <ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-float-button ymaps-2-1-79-_hidden-text" style="max-width: 28px" title="Измерение расстояний на карте">
+                                                                            <ymaps class="ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_ruler"> </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-float-button-text"> </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                            </ymaps>
+                                            <ymaps class="ymaps-2-1-79-controls__control" style="margin-right: 0px; margin-left: 0px; position: inherit; inset: 108px auto auto 10px;">
+                                                <ymaps>
+                                                    <ymaps class="ymaps-2-1-79-zoom" style="height: 150px">
+                                                        <ymaps class="ymaps-2-1-79-zoom__plus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                            <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"> </ymaps>
+                                                        </ymaps>
+                                                        <ymaps class="ymaps-2-1-79-zoom__minus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                            <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"> </ymaps>
+                                                        </ymaps>
+                                                        <ymaps class="ymaps-2-1-79-zoom__scale">
+                                                            <ymaps class="ymaps-2-1-79-zoom__runner ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-zoom__runner__transition ymaps-2-1-79-touch-action-none ymaps-2-1-79-user-selection-none"
+                                                            unselectable="on" style="top: 32px;">
+                                                                <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_runner"> </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                            </ymaps>
+                                        </ymaps>
+                                        <ymaps class="ymaps-2-1-79-places-pane" style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2004;">
+                                            <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on" style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 952px; top: 250px;">
+                                                <ymaps>
+                                                    <ymaps class="ymaps-2-1-79-islets_icon-with-caption">
+                                                        <ymaps class="ymaps-2-1-79-islets_icon-with-caption__caption-block">
+                                                            <ymaps class="ymaps-2-1-79-islets_icon-caption" style="padding: 0px; max-width: 0px;"> </ymaps>
+                                                        </ymaps>
+                                                        <ymaps id="id_171415599988141403809">
+                                                            <ymaps class="ymaps-2-1-79-svg-icon ymaps_https___api_maps_yandex_ru_2_1_79_1037265050490islands_icon___1E98FF_34x41_1714156000746" style="position: absolute; width: 34px; height: 41px; left: -11px; top: -38px;">
+                                                                <ymaps class="ymaps-2-1-79-svg-icon-content" style="font: 13px Arial, sans-serif; position: absolute; text-align: center;left: 5px;top: 6px;width: 16px;height: 16px;">
+                                                                    <ymaps> </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </ymaps>
+                                                </ymaps>
+                                            </ymaps>
+                                        </ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="module block" elemplace="bgfooter" id="footer" module="footer" style="border: 0px solid rgb(255, 255, 255);">
+                <div class="logoBox">
+                    <div class="logo"> </div>
+                    <div class="slogan" style="font-family: Zing;"> © 2023 <a href="https://weddingpost.ru/"> Weddingpost</a> -
+                        <constructor> сервис свадебных приглашений</constructor>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
