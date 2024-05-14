@@ -13,6 +13,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 
 <style scoped>
 main {
+  height: calc(100vh - 60px);
   background: rgb(255, 255, 255);
 }
 </style>

@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 .textLine {
   font-size: 72.7984pt;
@@ -38,12 +39,14 @@ span {
 }
 
 .element1 {
+  flex: 1;
   margin-top: -50px;
   height: 500px;
   width: 100%;
-  background-image: url("../assets/kitty.png");
-  background-position: top;
+  background-image: url("../assets/kitty-cut.png");
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  top: 18.5%;
 }
 </style>
