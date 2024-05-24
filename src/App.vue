@@ -1,13 +1,16 @@
 <script setup>
 import TheHeader from "./components/TheHeader.vue";
 import TheWelcome from "./components/TheWelcome.vue";
-// import TheHeader from './components/TheHeader.vue'
+import TheContent from './components/TheContent.vue'
+import TheMap from './components/TheMap.vue'
 </script>
 
 <template>
   <TheHeader />
   <main>
     <TheWelcome />
+    <TheContent />
+    <TheMap />
   </main>
 </template>
 

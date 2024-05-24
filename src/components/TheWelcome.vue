@@ -1,9 +1,18 @@
+<script setup>
+import TheTimer from "./TheTimer.vue";
+</script>
+
 <template>
   <div class="welcome">
     <p class="textLine">Екатерина</p>
     <p class="text-middle"><span>_____</span> AND <span>_____</span></p>
     <p class="textLine" style="">Иван</p>
     <div class="element1"></div>
+    <div class="welcome-text">
+      <h3>10 августа 2024</h3>
+      <p>Приглашем разделить этот день с нами</p>
+    </div>
+    <TheTimer />
   </div>
 </template>
 
@@ -48,5 +57,15 @@ span {
   background-repeat: no-repeat;
   background-size: contain;
   top: 18.5%;
+}
+
+.welcome-text {
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+h3 {
+  margin: 0;
 }
 </style>
