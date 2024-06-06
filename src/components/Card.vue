@@ -10,6 +10,10 @@
     <div class="card-photo">
       <img src="../assets/2e501a.jpg" alt="" />
     </div>
+    <p>
+      Торжественная часть состоится в <span>ЗАГС г. Пущино в 12:30</span><br />
+      Банкет пройдёт в <span>парк-отеле Воздвиженское в 17:00</span>.
+    </p>
     <h3>Ваши <br />Иван и Екатерина</h3>
   </div>
 </template>
@@ -58,19 +62,19 @@ span {
 }
 @media (max-width: 600px) {
   h2 {
-  font-family: SaintAmour;
-  font-size: 5em;
-  margin: 0;
-}
-h3 {
-  font-family: SaintAmour;
-  font-size: 4em;
-  margin: 0;
-}
-p {
-  margin: 0;
-  font-family: Cormorant;
-  font-size: 1.2em;
-}
+    font-family: SaintAmour;
+    font-size: 5em;
+    margin: 0;
+  }
+  h3 {
+    font-family: SaintAmour;
+    font-size: 4em;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-family: Cormorant;
+    font-size: 1.2em;
+  }
 }
 </style>
