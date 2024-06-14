@@ -18,5 +18,6 @@ import TheMap from './components/TheMap.vue'
 main {
   height: calc(100vh - 60px);
   background: rgb(255, 255, 255);
+  max-width: 100vw;
 }
 </style>
