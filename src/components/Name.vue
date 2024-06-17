@@ -2,8 +2,8 @@
 import { nameCodes, sex } from "../dictionary";
 
 const params = new URL(document.location).searchParams;
-const sxParam = params.get("sx");
-const nameParam = params.get("nm");
+const sxParam =  JSON.parse(params.get("sx"));
+const nameParam =  JSON.parse(params.get("nm"));
 console.log(params.get("sx"));
 
 let greets = "Дорогой гость!";

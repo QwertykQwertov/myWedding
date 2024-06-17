@@ -25,7 +25,7 @@ export const nameCodes = {
   arty: "Артур",
   alsk: "Аляска",
   sf: "Софья",
-  vrnk: "Вераника",
+  vrnk: "Вероника",
   olg: "Ольга",
 };
 
