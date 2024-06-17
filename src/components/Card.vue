@@ -1,6 +1,9 @@
+<script setup>
+import Name from "./Name.vue";
+</script>
 <template>
   <div class="card-wrapper">
-    <h2>Дорогой гость!</h2>
+    <Name />
     <p>
       Мы рады сообщить Вам, что <span>10.08.2024</span> состоится самое главное
       торжество в нашей жизни - <span>день нашей свадьбы!</span> Приглашаем Вас
